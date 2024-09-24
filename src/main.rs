@@ -1,6 +1,15 @@
+mod Task;
 fn main() {
-    println!("Hello, world!");
+  // for x in 0..=10{
+  //   println!("mostramos un número: {}",x)
+  // }
+  let class: <Task>;
+  class = Task::Task();
+  class.getTitulo();
 }
+
+
+
 /*
 Ejercicio: Sistema de Gestión de Tareas Avanzado
 Construir un sistema de gestión de tareas que permita crear, editar, eliminar y buscar tareas.
