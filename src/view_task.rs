@@ -1,10 +1,17 @@
-mod task;
-mod view_task;
+// src/view_task.rs
 
-fn main() {
-    view_task::ejecutar_programa();
+use crate::task::Task;
+
+pub fn ejecutar_programa() {
+    let tarea = Task::new(
+        1,
+        "Gestion en Rust".to_string(),
+        "Aprender estructuras y módulos en Rust".to_string(),
+        "2024-12-31".to_string(),
+    );
+
+    println!("{}", tarea.to_string());
 }
-
 
 /*
 Ejercicio: Sistema de Gestión de Tareas Avanzado
